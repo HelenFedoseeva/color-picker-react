@@ -10,13 +10,13 @@ const colorPickerOptions = [
   { label: "pink", color: "#E91E63" },
 ];
 
-
-
 const App = () => {
-  <>
-    <h1>Color Picker</h1>
-    <ColorPicker options={colorPickerOptions} />
-  </>;
+  return (
+    <>
+      <h1>Color Picker</h1>
+      <ColorPicker options={colorPickerOptions} />
+    </>
+  );
 };
 
 export default App;
