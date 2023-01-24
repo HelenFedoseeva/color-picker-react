@@ -1,0 +1,22 @@
+.ColorPicker{
+width: 200px;
+height: 150px;
+border: 1px solid #000;
+}
+
+.ColorPicker__title{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.ColorPicker__option{
+    width: 50px;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ColorPicker__active{
+    transform: scale();
+}
