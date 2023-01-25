@@ -3,7 +3,7 @@ import "./ColorPicker.css";
 
 class ColorPicker extends Component {
   state = {
-    activeOptionIdx: 5,
+    activeOptionIdx: 0,
   }
 
   setActiveIdx = (index) => {
@@ -22,11 +22,15 @@ class ColorPicker extends Component {
   }
 
   render() {
-    const {color} = this.props.options[this.state.activeOptionIdx];
+    const {color, label} = this.props.options[this.state.activeOptionIdx];
 
 
-     return (<div className="ColorPicker">
-       <h2 className="ColorPicker__title">The HEX format of the color is: <span>{ color }</span></h2>
+
+
+    return (<div className="ColorPicker">
+      <h2>{ this.props.title}</h2>
+       <p className="ColorPicker__title">The HEX format of the color is: <span>{color}</span> </p>
+       <p>Name: { label}</p>
       <div className="colorPicker__container">
          {this.props.options.map(({ label, color }, index) => {
          
