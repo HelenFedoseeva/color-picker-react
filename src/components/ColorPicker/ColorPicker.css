@@ -30,5 +30,5 @@ padding: 10px;
 }
 
 .ColorPicker__active{
-    transform: rotate(35deg);;
+    transform: rotate(5deg) scale(1.1);
 }
