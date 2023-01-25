@@ -1,5 +1,6 @@
 import React from "react";
 import ColorPicker from "./components/ColorPicker/ColorPicker";
+import Layout from "./components/Layout/Layout";
 
 const colorPickerOptions = [
   { label: "red", color: "#F44336" },
@@ -13,8 +14,10 @@ const colorPickerOptions = [
 const App = () => {
   return (
     <>
-      <h1>Color Picker</h1>
-      <ColorPicker options={colorPickerOptions} />
+      <Layout>
+        <h1>Choose a color</h1>
+        <ColorPicker options={colorPickerOptions} />
+      </Layout>
     </>
   );
 };
