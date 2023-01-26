@@ -1,8 +1,10 @@
 .ColorPicker{
 width: 300px;
 
-border: 1px solid #000;
+border: none;
+border-radius: 10px;
 padding: 10px;
+background-color: #ffffff;
 }
 
 .colorPicker__container{
